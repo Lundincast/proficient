@@ -1,0 +1,201 @@
+/* Lundin Cast */
+html{
+    height: 100%;
+}
+
+body{
+        width: 100%;
+        min-height: 100%;
+        margin-bottom: 5em;
+	background-image: url(/img/background.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+}
+
+#logo{
+	margin-top:25px;
+	margin-right:50px;
+	float:right;
+	width:180px;
+}
+
+#logo a{
+	display:block;
+	width:180px;
+	height:65px;
+	text-indent:-99999px;
+	background:url(/img/logo.jpg) no-repeat;
+}
+
+#langMenu{
+	position:absolute;
+ 	right:0;
+ 	top:100px;
+ 	right:50px;
+}
+
+#langMenu li{
+	float:left;
+	list-style-type:none;
+}
+
+#langMenu li a{
+	display:block;
+	text-indent:-99999px;
+	width:66px;
+	height:30px;
+}
+
+.idiomaES{
+	background:url(/img/lang-es.jpg) no-repeat;
+}
+.idiomaCA{
+	background:url(/img/lang-ca.jpg) no-repeat;
+}
+.idiomaEN{
+	background:url(/img/lang-en.jpg) no-repeat;
+}
+.idiomaFR{
+	background:url(/img/lang-fr.jpg) no-repeat;
+}
+.idiomaIT{
+ 	background:url(/img/lang-it.jpg) no-repeat;
+ 	display:inline;
+ 	margin-left:7px;
+}
+
+nav{
+ 	float:left;
+ 	margin-top:68px;
+ 	border-top:1px solid #eee;
+ 	padding-top:5px;
+ 	font-family:"Century Gothic";
+ 	letter-spacing: 0.1em;
+}
+
+nav #menu{
+	background:#FFFFFF none repeat scroll 0 0;
+ 	left:0;
+ 	padding-bottom:5px;
+ 	padding-left:290px;
+ 	position:absolute;
+ 	top:420px;
+ 	width:1150px;
+ 	border-top:0px;
+ 	font-size:smaller;
+}
+
+nav li{
+	float:left;
+ 	position:relative;
+	list-style-type:none;
+}
+
+nav a{
+ 	color:#666;
+ 	display:block;
+ 	font-weight:bold;
+ 	padding:0 10px;
+ 	border-right:1px solid #EEEEEE;
+ 	text-decoration:none;
+}
+
+nav a:hover{
+ 	text-decoration:none;
+ 	color:#000;
+}
+
+nav .actual a{
+ 	color:#000;
+}
+
+nav li:hover,
+nav li.sfHover{
+ 	visibility:inherit; /* fixes IE7 'sticky bug' */
+}
+
+nav li ul{
+ 	text-align:left;
+ 	display: none;
+ 	position: absolute; 
+ 	top: 1em;
+ 	left: 0;
+ 	width:15em;
+}
+
+* html nav li ul{
+ 	top:23px;
+}
+
+nav li > ul {
+ 	top: 20px;
+ 	left: auto;
+}
+
+nav li:hover ul,
+nav li.sfHover ul{
+ 	display: block;
+ 	z-index: 6000;
+}
+
+nav li ul li{
+ 	display:block;
+ 	padding:0;
+ 	border-top:1px solid #CCC;
+ 	border-left:1px solid #CCC;
+ 	width:100%;
+}
+
+* html nav li ul li{
+ 	border-right:1px solid #ccc;
+ 	border-bottom:1px solid #ccc;
+}
+
+nav li ul li a{
+ 	color:#666;
+ 	padding:5px 10px;
+ 	background:#fff;
+}
+
+nav li ul a:hover{
+  	background:#fff url(../images/degradado.png) repeat-x 0 bottom;
+}
+
+nav li ul li:hover ul,
+nav li ul li.sfHover ul{
+ 	left:15em;
+ 	top:0;
+}
+
+#content{
+    clear: both;
+    position: relative;
+    top: 10em;
+    margin: 0 auto;
+    padding: 0.5em;
+    width: 70%;
+    background:#fff;
+    opacity:.8;
+    filter:alpha(opacity=80);
+    border: 1px solid #E0E0E0;
+    border-radius: 5%;
+}
+
+.bloqueTexto{
+    position: relative;
+    padding: 0 auto;
+    text-align: justify;
+}
+
+
+footer{
+    clear: both;
+    position: relative;
+    bottom: 0px;
+    width:100%;
+    font-family: "Century Gothic";
+    font-size: 0.5em;
+    text-align:center;
+}
+

@@ -2,12 +2,91 @@
 <html>
     <head>
         <meta charset="UTF-8" />
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>{% block title %}Proficient.es{% endblock %}</title>
+        {% block stylesheets %}
+        <link rel="stylesheet" href="{{ asset('css/normalize.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/foundation.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/mobilestyle.css') }}" type="text/css" media="screen" />
+        <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+        {% endblock %}
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
     </head>
     <body>
-        {% block body %}{% endblock %}
-        {% block javascripts %}{% endblock %}
+        {% block body %}
+        <div class="off-canvas-wrap">
+            <div class="inner-wrap">
+                <nav class="tab-bar">
+                        <a class="left-off-canvas-toggle menu-icon">
+                            <span>Proficient</span>
+                        </a>
+                    <section class="right tab-bar-section">
+                            <a href="#" data-dropdown="drop1" class="right">{% trans %}francés{% endtrans %} <i class="fa fa-flag-o"></i></a>
+                            <ul id="drop1" class="f-dropdown" data-dropdown-content>
+                                <li><a href="{{ path(app.request.get('_route'), {_locale : 'en'}) }}">English</a></li>
+                                <li><a href="{{ path(app.request.get('_route'), {_locale : 'fr'}) }}">Fran&#231;ais</a></li>
+                                <li><a href="{{ path(app.request.get('_route'), {_locale : 'it'}) }}">Italiano</a></li>
+                                <li><a href="{{ path(app.request.get('_route'), {_locale : 'ca'}) }}">Catal&#224;</a></li>
+                            </ul>
+                    </section>
+                </nav>
+                <aside class="left-off-canvas-menu">
+                    <ul class="off-canvas-list">
+                        <li><label>Proficient</label></li>
+                        <li><a href="{{ path('proficient_homepage', {'_locale': app.request.get('_locale')}) }}"><i class="fa fa-home"></i> {% trans %}Inicio{% endtrans %}</a></li>
+                        <li><a href="{{ path('proficient_presentation', {'_locale': app.request.get('_locale')}) }}">{% trans %}Quiénes somos{% endtrans%}</a></li>
+                        <li><a href="{{ path('proficient_langues', {'_locale': app.request.get('_locale')}) }}">{% trans %}Idiomas{% endtrans%}</a></li>
+                        <li><a href="{{ path('proficient_services', {'_locale': app.request.get('_locale')}) }}">{% trans %}Servicios{% endtrans%}</a></li>
+                        <li><a href="{{ path('proficient_methode_de_travail', {'_locale': app.request.get('_locale')}) }}">{% trans %}M&#233;todo de trabajo{% endtrans%}</a></li>
+                        <li><a href="{{ path('proficient_tarifs', {'_locale': app.request.get('_locale')}) }}">{% trans %}Tarifas{% endtrans%}</a></li>
+                        <li><a href="{{ path('proficient_empleo', {'_locale': app.request.get('_locale')}) }}">{% trans %}Empleo{% endtrans%}</a></li>
+                        <li><a href="{{ path('proficient_ongs', {'_locale': app.request.get('_locale')}) }}">{% trans %}ONGs{% endtrans%}</a></li>
+                        <li><a href="{{ path('proficient_contact', {'_locale': app.request.get('_locale')}) }}"><i class="fa fa-envelope-o"></i> {% trans %}Contacto{% endtrans%}</a></li>
+                    </ul>
+                    <hr>
+                    <ul  class="off-canvas-list">
+                        <li><label>{% trans%}Acceso seguro{% endtrans%}</label></li>
+                        <li><a href="#"><i class="fa fa-sign-in"></i> {% trans%}Conectar{% endtrans%}</a></li>
+                    </ul>
+                </aside>
+                <section class="main-section">
+                    <div id="contentWrapper">
+                        <div id="header">
+                            <div id="logo">
+
+                            </div>
+                        </div>
+                        <hr>
+                        <div id="content">
+                            {% block content %}
+                            
+                            {% endblock %}
+                        </div>
+                    </div>
+                    <div class="proficient-footer">
+                        <ul class="social-links">
+                            <li><a href="#" onclick="window.open('http://www.twitter.com/intent/tweet?text=Les+meilleurs+tarifs+de+traduction&url=http://proficient.lundincast.com/mobiletarifs.html')" class="circle"><i class="fa fa-twitter fa-lg"></i></a></li>
+                            <li><a href="#" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.proficient.lundincast.com')" class="circle"><i class="fa fa-facebook fa-lg"></i></a></li>
+                            <li><a href="#" onclick="window.open('http://www.linkedin.com/shareArticle?mini=true&url=http://www.proficient.lundincast.com/mobiletarifs.html&title=Les meilleurs tarifs de traduction&summary=')" class="circle"><i class="fa fa-linkedin fa-lg"></i></a></li>
+                        </ul>
+                        <div class="medium-8 medium-8 pull-4 columns">
+                            <h2>PROFICIENT</h2>
+                            <p>&copy; 2009&dash;2014 PROFICIENT C.B. Tous droits r&#233;serv&#233;s.</p>
+                        </div>          
+                    </div>
+                </section>
+                    <a class="exit-off-canvas"></a>
+            </div>
+        </div>
+        {% endblock %}
+        {% block javascripts %}
+        <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+        <script src="{{ asset('js/modernizr.js') }}"></script>
+        <script src="{{ asset('js/foundation.min.js') }}"></script>
+        <script src="{{ asset('js/vendor/fastclick.js') }}"></script>
+        <script>
+            $(document).foundation();
+        </script>
+        {% endblock %}
     </body>
 </html>

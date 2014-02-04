@@ -1,0 +1,205 @@
+/* Lundin Cast - 2014 */
+
+
+/* Off-canvas menu customization*/
+.off-canvas-wrap .left-off-canvas-menu ul.off-canvas-list li label
+{
+  background-color: transparent;
+  background-image: none;
+  background-repeat: repeat;
+  background-attachment: scroll;
+  background-position: 0% 0%;
+  background-clip: border-box;
+  background-origin: padding-box;
+  background-size: auto auto;
+  border-top-width: medium;
+  border-top-style: none;
+  padding-top: 0.4rem;
+  padding-right: 0.95rem;
+  padding-bottom: 0.4rem;
+  padding-left: 0.95rem;
+  font-size: 0.775rem;
+}
+
+.off-canvas-wrap .left-off-canvas-menu ul.off-canvas-list li a
+{
+  border-bottom-width: medium;
+  border-bottom-style: none;
+  font-size: 1.25rem;
+  padding-top: 0.2rem;
+  padding-right: 0.95rem;
+  padding-bottom: 0.2rem;
+  padding-left: 0.95rem;
+  color: #cccccc;
+  font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+  font-weight: 500;
+}
+
+.off-canvas-wrap .left-off-canvas-menu ul.off-canvas-list li a:active
+{
+    color: #333333;
+}
+
+.off-canvas-wrap .left-off-canvas-menu hr
+{
+  border-top-color: #444444;
+  border-right-color-value: #444444;
+  border-bottom-color: #444444;
+  border-left-color-value: #444444;
+  margin-top: 5px;
+  margin-right: 0px;
+  margin-bottom: 10px;
+  margin-left: 0px;
+}
+
+section>a{
+    text-decoration: none;
+    color: white;
+    text-rendering: optimizeLegibility;
+}
+
+section ul#drop1{
+    width: 80px;
+}
+
+/* End of off-canvas menu customization*/
+
+body{
+    background-image: url(/img/background.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top;
+}
+
+#contentWrapper{
+    background-color: white;
+    opacity:.9;
+    filter:alpha(opacity=90);
+    height: 100%;
+    padding: 0 .5em;
+}
+
+#header{
+    display: block;
+    width: 100%;
+    height: 10em;
+    padding: 1em 1em;
+    opacity:.9;
+    filter:alpha(opacity=90);
+}
+
+#logo{
+    background: url(mobilelogo.png) no-repeat;
+    width: 90%;
+    height: 10em;
+    margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: "Open Sans","Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: #222222;
+    text-rendering: optimizelegibility;
+    margin-top: 0.2rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.4;
+}
+
+#content p{
+    text-align: center;
+}
+
+#content h1,h2{
+    font-style: normal;
+    font-weight: 300;
+    text-align: center;
+}
+
+#content ul li{
+    padding: .5em 0;
+}
+
+#content .legend{
+    margin: 0 .5em;
+    color: grey;
+    line-height: .5em;
+    font-style: italic;
+}
+
+#content .legend p{
+    margin: 0;
+    padding: 0;
+    font-size: .7em;
+}
+
+#content .legend p:last-child{
+    margin-bottom: 1em;
+}
+
+hr{
+    width: 85%;
+    margin: 1em auto;
+}
+
+.row p{
+    text-align: center;
+}
+
+.proficient-footer{
+    margin: 0;
+    width: 100%;
+    height: 8em;
+    background: #333333;
+    padding: .5em auto;
+}
+
+.social-links{
+    display: block;
+    width: 10.5em;
+    padding: .8em .5em 0 .5em;
+    margin: 0 auto;
+}
+
+.social-links li{
+    display: inline-block;
+    list-style: none;
+    color: #333333;
+}
+
+.social-links a:hover{
+    text-decoration: none;
+    color: #333333;
+}
+
+.circle{
+    width:3em;
+    height:3em;
+    border-radius:50%;
+    color:#333333;
+    text-align:center;
+    vertical-align: middle;
+    display: table-cell;
+    background:#777777;
+}
+
+.circle:hover{
+    background: #5B5B5B;
+}
+
+.proficient-footer h2{
+    color: #777777;
+    font-size: 1.5em;
+    font-weight: 500;
+    text-align: center;
+    margin: 0 auto;
+    text-rendering: optimizeLegibility;
+}
+
+.proficient-footer p{
+    color: #777777;
+    font-size: .7em;
+    text-align: center;
+    margin: 0 auto;
+    text-rendering: optimizeLegibility;
+}

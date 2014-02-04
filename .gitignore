@@ -3,4 +3,6 @@
 /app/cache/*
 /app/logs/*
 /vendor/
+/bin/
 /app/config/parameters.yml
+/nbproject/private/

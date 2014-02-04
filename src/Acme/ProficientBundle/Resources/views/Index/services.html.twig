@@ -1,0 +1,20 @@
+{% extends "::base.html.twig" %}
+
+{% block title %}{% trans %}Servicios{% endtrans %}{% endblock %}
+
+{% block content %}
+    <h2>{% trans %}Traducción{% endtrans %}</h2>
+		<p>{% trans %}Somos especialistas en traducción de todo tipo de textos{% endtrans %}.</p>
+		<p>{% trans %}Los sectores en los que nos movemos abarcan desde la exportación e importación pasando por información en general, medicina, publicidad, telecomunicaciones, electrónica, cine, restauración&#8230;{% endtrans %}.</p>
+		<ul>
+			<li><strong>{% trans %}General{% endtrans %}</strong>: {% trans %}Currículum vitae, artículos de revistas no especializadas, traducción de menús&#8230;{% endtrans %}</li>
+			<li><strong>{% trans %}Científico-Técnica{% endtrans %}</strong>: {% trans %}Artículos de revistas especializadas, manuales&#8230;{% endtrans %}</li>
+			<li><strong>{% trans %}Económicas{% endtrans %}</strong>: {% trans %}Textos especializados en economía y finanzas&#8230;{% endtrans %} </li>
+			<li><strong>{% trans %}Jurídicas/Juradas{% endtrans %}</strong>: {% trans %}Contratos, partidas de nacimiento, documentos de notaría, diplomas&#8230;{% endtrans %}</li>
+			<li><strong>{% trans %}Multimedia{% endtrans %}</strong>: {% trans %}Software, páginas web&#8230;{% endtrans %}</li>
+		</ul>
+		<h2>{% trans %}Transcripciones{% endtrans %}</h2>
+		<p>{% trans %}Ponemos por escrito cualquier grabación de audio o vídeo en el idioma que necesite{% endtrans %}.</p>
+		<h2>{% trans %}Correcciones y revisiones de textos{% endtrans %}</h2>
+		<p>{% trans %}Ofrecemos este servicio en los idiomas con los que trabajamos para asegurar la perfecta adecuación lingüística de sus textos{% endtrans %}.</p>
+{% endblock %}

@@ -1,0 +1,53 @@
+proficient_homepage:
+    pattern: /{_locale}
+    defaults: {_controller: AcmeProficientBundle:Index:main, _locale: es}
+    requirements:
+        _locale: es|en|fr|ca|it
+
+proficient_presentation:
+    pattern: /{_locale}/presentation
+    defaults: {_controller: AcmeProficientBundle:Index:presentation, _locale: es}
+    requirements:
+        _locale: es|en|fr|ca|it
+
+proficient_langues:
+    pattern: /{_locale}/langues
+    defaults: {_controller: AcmeProficientBundle:Index:langues, _locale: es}
+    requirements:
+        _locale: es|en|fr|ca|it
+
+proficient_services:
+    pattern: /{_locale}/services
+    defaults: {_controller: AcmeProficientBundle:Index:services, _locale: es}
+    requirements:
+        _locale: es|en|fr|ca|it
+
+proficient_methode_de_travail:
+    pattern: /{_locale}/methode_de_travail
+    defaults: {_controller: AcmeProficientBundle:Index:methode, _locale: es}
+    requirements:
+        _locale: es|en|fr|ca|it
+
+proficient_tarifs:
+    pattern: /{_locale}/tarifs
+    defaults: {_controller: AcmeProficientBundle:Index:tarifs, _locale: es}
+    requirements:
+        _locale: es|en|fr|ca|it
+
+proficient_empleo:
+    pattern: /{_locale}/empleo
+    defaults: {_controller: AcmeProficientBundle:Index:empleo, _locale: es}
+    requirements:
+        _locale: es|en|fr|ca|it
+
+proficient_ongs:
+    pattern: /{_locale}/ongs
+    defaults: {_controller: AcmeProficientBundle:Index:ongs, _locale: es}
+    requirements:
+        _locale: es|en|fr|ca|it
+        
+proficient_contact:
+    pattern: /{_locale}/contact
+    defaults: {_controller: AcmeProficientBundle:Index:contact, _locale: es}
+    requirements:
+        _locale: es|en|fr|ca|it

@@ -1,0 +1,19 @@
+{% extends "::base.html.twig" %}
+
+{% block title %}{% trans %}Método de trabajo{% endtrans %}{% endblock %}
+
+{% block content %}
+    <h1>{% trans %}Método de trabajo{% endtrans %}</h1>
+		<ul>
+			<li>{% trans %}Solicite información sobre su proyecto de modo gratuito y sin compromiso{% endtrans %}. {% trans %}Utilice nuestro correo electrónico o bien nuestro teléfono para ponerse en contacto con nosotros y efectuar así su petición{% endtrans %}. </li>
+			<li>{% trans %}Envíenos el material a traducir y le haremos un presupuesto lo más rápido posible{% endtrans %}. {% trans %}Le responderemos en breve facilitándole la información detallada{% endtrans %}: {% trans %}el presupuesto para el encargo solicitado, el tiempo estimado, la información necesaria para la redacción del contrato, etc{% endtrans %}.</li>
+			<li>{% trans %}Si usted decide solicitar nuestros servicios le mandaremos un contrato{% endtrans %}. {% trans %}Una vez firmado y enviado a nuestra dirección de mail le confirmaremos su recepción{% endtrans %}. {% trans %}Consideraremos pues que usted ha decidido encargarnos este proyecto y se procederá a su realización{% endtrans %}. </li>
+		</ul>
+		<h2>{% trans %}Modo de pago{% endtrans %}</h2>
+		<p>{% trans %}Al finalizar el plazo de entrega, le enviaremos mediante correo electrónico el trabajo realizado junto con la factura correspondiente{% endtrans %}.</p>
+  
+		<p>{% trans %}Trabajamos exclusivamente con transferencias bancarias, por lo que le facilitaremos un número de cuenta en el que podrá realizar el ingreso{% endtrans %}. </p>           
+		<h2>{% trans %}Plazo{% endtrans %}</h2>
+		<p>{% trans %}El plazo de entrega mínimo para una traducción es de 3 o 4 días a partir de la recepción del contrato firmado,  dependiendo de la extensión y de la combinación lingüística{% endtrans %}. {% trans %}Aunque si usted necesita urgentemente la traducción, haremos todo lo posible por adaptarnos a sus necesidades{% endtrans %}.</p>
+		<p>{% trans %}En todo caso, cuando le enviemos el presupuesto le indicaremos el plazo de entrega necesario para su encargo de traducción{% endtrans %}.</p>
+{% endblock %}

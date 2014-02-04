@@ -1,0 +1,7 @@
+parameters:
+#    acme_proficient.example.class: Acme\ProficientBundle\Example
+
+services:
+#    acme_proficient.example:
+#        class: %acme_proficient.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

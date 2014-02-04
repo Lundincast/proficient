@@ -1,0 +1,43 @@
+{% extends "::base.html.twig" %}
+
+{% block title %}{% trans %}Precios y Tarifas de Traducción{% endtrans %}{% endblock %}
+
+{% block content %}
+<h1>{% trans %}Precios y Tarifas de Traducción{% endtrans %}</h1>
+<h2>{% trans %}Traducciones directas e inversas{% endtrans %}</h2>
+    <div class="row">
+        <div class="small-6 columns">
+            <p>{% trans %}catalán{% endtrans %}, {% trans %}valenciano{% endtrans %}<p>
+            <p>0.05</p>
+        </div>
+        <div class="small-6 columns">
+            <p>{% trans %}italiano{% endtrans %}, {% trans %}inglés{% endtrans %}, {% trans %}francés{% endtrans %}</p>
+            <p>0.06</p>
+        </div>
+        <div class="small-6 columns">
+            <p>{% trans %}alemán{% endtrans %}</p>
+            <p>0.07</p>
+        </div>
+        <div class="small-6 columns">
+            <p>{% trans %}holandés{% endtrans %}</p>
+            <p>0.09</p>
+        </div>
+    </div>
+    <hr>
+    <h2>{% trans %}Traducciones Juradas Oficiales{% endtrans %}</h2>
+    <div class="row">
+        <div class="small-6 columns">
+            <p>{% trans %}catalán{% endtrans %}, {% trans %}inglés{% endtrans %}, {% trans %}francés{% endtrans %}</p>
+            <p>0.12</p>
+        </div>
+        <div class="small-6 columns">
+            <p>{% trans %}alemán{% endtrans %}</p>
+            <p>0.14</p>
+        </div>
+    </div>
+    <div class="legend">
+        <p>{% trans %}Precios por palabra del documento original, 20% IVA no incluido{% endtrans %}.</p>
+        <p>{% trans %}Recargo traducción jurídica o especializada + 0.01 o 0.02 euros{% endtrans %}.</p>
+        <p>{% trans %}La traducción cruzada es aquella en la que ninguno de los idiomas es el español o el catalán (ejemplo{% endtrans %}: {% trans %}traducción del alemán a francés){% endtrans %}. {% trans %}Estas traducciones llevan un recargo de un 30%{% endtrans %}.</p>
+    </div>
+{% endblock %}
