@@ -1,0 +1,33 @@
+{% extends "::base.html.twig" %}
+
+{% block title %}{% trans %}Traducciones Proficient{% endtrans %}{% endblock %}
+
+{% block content %}
+<div>
+    <p><i class="fa fa-users fa-4x"></i></p>
+    <h1>{% trans %}Quiénes somos{% endtrans %}</h1>
+    <p>{% trans %}Nuestro objetivo es ayudarle a transmitir su mensaje en otros idiomas, salvaguardando todo el sentido y los matices de su comunicación, aportando así a su negocio una importante ventaja competitiva{% endtrans %}... <a href="{{ path('proficient_presentation', {'_locale': app.request.get('_locale')}) }}">{% trans %}Leer más{% endtrans%}</a></p>
+    <hr>
+    <p><i class="fa fa-pencil-square-o fa-4x"></i></p>
+    <h1>{% trans %}Servicios{% endtrans %}</h1>
+    <p>{% trans %}Traducción{% endtrans %}:{% trans %} Somos especialistas en traducción de todo tipo de textos{% endtrans %}: {% trans %}General{% endtrans %}, {% trans %}Científico-Técnica{% endtrans %}, {% trans %}Económicas{% endtrans %}, {% trans %}Multimedia{% endtrans %}</p>
+    <p>{% trans %}Transcripciones{% endtrans %}: {% trans %}Ponemos por escrito cualquier grabación de audio o vídeo en el idioma que necesite{% endtrans %}.</p>
+    <p>{% trans %}Correcciones y revisiones de textos{% endtrans %} ... <a href="{{ path('proficient_presentation', {'_locale': app.request.get('_locale')}) }}">{% trans %}Leer más{% endtrans%}</a></p>
+    <hr>
+    <p><i class="fa fa-comments-o fa-4x"></i></p>
+    <h1>{% trans %}Idiomas{% endtrans %}</h1>
+    <p>{% trans %}Nuestro equipo de profesionales realiza trabajos de traducción, corrección y transcripción en los principales idiomas de Europa que resultan imprescindibles hoy en día para garantizar el éxito de su negocio{% endtrans %}.
+    {% trans %}Los idiomas con los que trabajamos son{% endtrans %}: {% trans %}Castellano{% endtrans %}, {% trans %}catalán{% endtrans %}, {% trans %}inglés{% endtrans %}, {% trans %}francés{% endtrans %}... <a href="{{ path('proficient_presentation', {'_locale': app.request.get('_locale')}) }}">{% trans %}Leer más{% endtrans%}</a></p>
+    <hr>
+    <p><i class="fa fa-cogs fa-4x"></i></p>
+    <h1>{% trans %}Método de trabajo{% endtrans %}</h1>
+    <p>{% trans %}Solicite información sobre su proyecto de modo gratuito y sin compromiso{% endtrans %}. 
+    {% trans %}Envíenos el material a traducir y le haremos un presupuesto lo más rápido posible{% endtrans %}. 
+    {% trans%}Le responderemos en breve facilitándole la información detallada{% endtrans %}: 
+    {% trans %}el presupuesto para el encargo solicitado, el tiempo estimado, la información necesaria para la redacción del contrato, etc{% endtrans %}... <a href="{{ path('proficient_presentation', {'_locale': app.request.get('_locale')}) }}">{% trans %}Leer más{% endtrans%}</a></p>
+    <hr>
+    <p><i class="fa fa-envelope-o fa-4x"></i></p>
+    <h1>{% trans %}Contacto{% endtrans %}</h1>
+    <p>{% trans %}Nuestro objetivo es ayudarle a transmitir su mensaje en otros idiomas, salvaguardando todo el sentido y los matices de su comunicación, aportando así a su negocio una importante ventaja competitiva{% endtrans %}... <a href="{{ path('proficient_presentation', {'_locale': app.request.get('_locale')}) }}">{% trans %}Leer más{% endtrans %}</a></p>
+</div>
+{% endblock %}
