@@ -21,13 +21,7 @@
                             <span>Proficient</span>
                         </a>
                     <section class="right tab-bar-section">
-                            <a href="#" data-dropdown="drop1" class="right">{% trans %}francés{% endtrans %} <i class="fa fa-flag-o"></i></a>
-                            <ul id="drop1" class="f-dropdown" data-dropdown-content>
-                                <li><a href="{{ path(app.request.get('_route'), {_locale : 'en'}) }}">English</a></li>
-                                <li><a href="{{ path(app.request.get('_route'), {_locale : 'fr'}) }}">Fran&#231;ais</a></li>
-                                <li><a href="{{ path(app.request.get('_route'), {_locale : 'it'}) }}">Italiano</a></li>
-                                <li><a href="{{ path(app.request.get('_route'), {_locale : 'ca'}) }}">Catal&#224;</a></li>
-                            </ul>
+                        {{ render(controller('AcmeProficientBundle:Index:langMenu', { 'route' : app.request.get('_route') })) }}
                     </section>
                 </nav>
                 <aside class="left-off-canvas-menu">

@@ -50,4 +50,21 @@ class IndexController extends Controller
     {
         return $this->render('AcmeProficientBundle:Index:contact.html.twig', array('_locale' => $_locale));
     }
+    
+    public function langMenuAction($route)
+    {
+        $lang = array('en' => 'English',
+                      'es' => 'Español',
+                      'fr' => 'Français',
+                      'it' => 'Italiano',
+                      'ca' => 'Catalá');
+        $local = $this->getRequest()->get('_locale');
+        $current = $lang[$local];
+        unset($lang[$local]);
+        
+        return $this->render('AcmeProficientBundle:Index:langMenu.html.twig', 
+                array('currentLang' => $current,
+                      'routeName'   => $route,
+                      'langList'    => $lang));
+    }
 }

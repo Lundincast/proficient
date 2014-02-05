@@ -1,0 +1,6 @@
+<a href="#" data-dropdown="drop1" class="right">{{ currentLang }} <i class="fa fa-flag-o"></i></a>
+<ul id="drop1" class="f-dropdown" data-dropdown-content>
+    {% for key, lang in langList %}
+    <li><a href="{{ path(routeName, {_locale : key}) }}">{{ lang }}</a></li>
+    {% endfor %}
+</ul>
