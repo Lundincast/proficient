@@ -51,3 +51,9 @@ proficient_contact:
     defaults: {_controller: AcmeProficientBundle:Index:contact, _locale: es}
     requirements:
         _locale: es|en|fr|ca|it
+
+proficient_contact_confirmation:
+    pattern: /{_locale}/confirmation
+    defaults:
+        _controller: FrameworkBundle:Template:template
+        template:    'AcmeProficientBundle:Index:confirmation.html.twig'
